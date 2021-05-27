@@ -94,7 +94,7 @@ First in your terminal go to your project directory using `cd project_path` then
    * Debug mode: off
    * Running on http://address/ (Press CTRL+C to quit)
 ```
-Then navigate to that address using your web browser and you something like this
+Then navigate to that address `http://address/` using your web browser and you will get something like this
 ![](random_image.jpg)
 1. You can then choose to generate images, quotes along with their authors randomly by pressing the `Random` button
 2. You can also create a custome meme by pressing on `Creator` button then inserting the required inputs and then press `Creaete Meme!`
