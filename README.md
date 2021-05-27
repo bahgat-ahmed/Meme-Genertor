@@ -89,7 +89,9 @@ First in your terminal go to your project directory using `cd project_path` then
 # run the server
 >> python app.py
 # the output that you will git
->>   WARNING: This is a development server. Do not use it in a production deployment.
+>> * Serving Flask app 'app' (lazy loading)
+   * Environment: production
+     WARNING: This is a development server. Do not use it in a production deployment.
      Use a production WSGI server instead.
    * Debug mode: off
    * Running on http://address/ (Press CTRL+C to quit)
