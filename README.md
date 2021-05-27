@@ -2,32 +2,32 @@
 
 This is one of the Udacity Intermediate Python Nanodegree project that generates a memes by inserting a quote along with its author name on an image. Images, quotes, and authors could be given or just randomly generated using the available images, quotes, and authors in this project `_data` folder.
 
-## Used Packages
+## 1. Used Packages
 
 Packages are found in the `requirements.txt` file. But mainly the used packages are: `python3`, `Flask`, `numpy`, `pandas`, `Pillow`, `python-docx`, `requests`, and `urllib3`. So if you just installed these packages, I think your package manager will mostly hander the other packages in the `requirements.txt` file since some of them are dependencies of the packages I have just mentioned.
 
-## Project Overview
+## 2. Project Overview
 
 This project mainly consists of two modules `MemeEngine`, and `QuoteEngine` modules.
 
-### `QuoteEngine` Module
+### 2.1 `QuoteEngine` Module
 
 This module is responsisble for parsing different supported file extensions according to the file type automatically to extract quotes, and authors for them. These files are the built-in files from which random quotes, and authors are extraced randomly if the user doesn't provide the quote and the author.
 
 This module is built on a basic abstract class the `IngestorInterface` from which other classes inherit so that each new subclass is responsible for ingesting a different file type. The `strategy object` pattern is used in developing this application so that if we want to change some file type, add, or remove it, we could do it easily without having to change many parts in the code, and the code will still be consistent, organized, scalable, and maintainable.
 
-### `MemeEngine` Module
+### 2.2 `MemeEngine` Module
 
 This module is responsible for writing quotes, and authors on images. It adjusts the font, and text alignment of the written texst. In addition to this, it write the quotes, and authors on random positions on the images.
 
-### What the User Can Do
+### 2.3 What the User Can Do
 
 The user can either choose to generate the quotes, and authors randomly on random images all of which are found in the `_data` folder in this project, or he could choose to:
 1. Provide the `quote`, and the `author` and the images will be obtained randomly from the `_data` folder
 2. Provide the `image`, and the `quote`, and the `author` will be obtained randomly from the `_data` folder
 3. Provide the `image`, the `quote`, and the `author`
 
-### Folders' and Files' Descriptions
+### 2.4 Folders' and Files' Descriptions
 
 * **_data**: It contains the photos, the quotes along with their authors that are built in the tool
 * **fonts**: It contains the font used to write text on the image
@@ -39,44 +39,42 @@ The user can either choose to generate the quotes, and authors randomly on rando
 * **app.py**: The file containing the **Command Line Interface**
 * **meme.py**: The file containing the **Web Interface**
 * **requirements.txt**: The file containing the required packages for running this program
-* 
-## Running the program
+
+## 3. Running the program
 
 This program has two interfaces. The **Command Line Interface**, and the **Web** interface.
 
 To operate the program, you should first download the project, and install the packages found in teh `requirements.txt` file.
 
-### The Command Line Interface
+### 3.1 The Command Line Interface
 
 Using your terminal either type `python3 meme.py` or type `python meme.py` to for the program to generate `quotes` along with their `authors`,, and `images` randomly. Or you could provide them by using the optional parameters. 
 
 > If you provided the `quote`, you must provide the `author` as well all the program will give you an error.
 
-#### optional parameters
+#### 3.3.1 optional parameters
 
 * `--body` the quote body along with its author `--author`
 * `--path` the input image path
 
-#### Examples of running the program
-
-### The Command Line Interface
+#### 3.3.2 Examples of running the program
 
 First in your terminal go to your project directory using `cd project_path` then
-## Random Generation
+##### Random Generation
 ```
 # randomly generate images, quotes along with their authors
 >> python meme.py
 # the output image path is returned
 >> ./tmp/8851400.jpg
 ```
-## Random Image Generation while Specifying Quote and Author 
+##### Random Image Generation while Specifying Quote and Author 
 ```
 # randomly generate images while specifying quotes along with their authors
 >> python meme.py --body="This is a quote example" --author="some_name"
 # the output image path is returned
 >> ./tmp/8851400.jpg
 ```
-## Specifying Image, Quote and Author 
+##### Specifying Image, Quote and Author 
 ```
 # randomly generate images while specifying quotes along with their authors
 >> python meme.py --path="some_image.jpg" --body="This is a quote example" --author="some_name"
@@ -84,7 +82,7 @@ First in your terminal go to your project directory using `cd project_path` then
 >> ./tmp/8851400.jpg
 ```
 
-### The Web Interface
+### 3.2 The Web Interface
 
 First in your terminal go to your project directory using `cd project_path` then
 ```
