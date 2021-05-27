@@ -58,7 +58,7 @@ To operate the program, you should first download the project, and install the p
 
 Using your terminal either type `python3 meme.py` or type `python meme.py` to for the program to generate `quotes` along with their `authors`,, and `images` randomly. Or you could provide them by using the optional parameters. 
 
-> If you provided the `quote`, you must provide the `author` as well all the program will give you an error.
+> **Note:** If you provided the `quote`, you must provide the `author` as well or the program will give you an error.
 
 #### 3.3.1 optional parameters
 
