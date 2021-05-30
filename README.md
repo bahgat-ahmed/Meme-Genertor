@@ -50,7 +50,7 @@ The user can either choose to generate the quotes, and authors randomly on rando
 
 ## 3. Running the program
 
-This program has two interfaces. The **Command Line Interface**, and the **Web** interface.
+This program has two interfaces. The **Command Line Interface**, and the **Web Interface**.
 
 To operate the program, you should first download the project, and install the packages found in teh `requirements.txt` file.
 
