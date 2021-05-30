@@ -1,6 +1,6 @@
 # Meme Genertor
 
-This is the Udacity [Intermediate Python Nanodegree](https://www.udacity.com/course/intermediate-python-nanodegree--nd303) last project that generates memes by inserting a quote along with its author name on an image. Images, quotes, and authors could be given or just randomly generated using the available images, quotes, and authors in this project `_data` folder.
+This is the Udacity [Intermediate Python Nanodegree](https://www.udacity.com/course/intermediate-python-nanodegree--nd303) last project that generates memes by inserting quotes along with thier authors' names on images using a Command Line Interface or a Web-Interface which are built using Object Oriented Programming (OOP). Images, quotes, and authors could be given or just randomly generated using the available images, quotes, and authors in this project `_data` folder.
 
 ## 1. Used Packages
 
